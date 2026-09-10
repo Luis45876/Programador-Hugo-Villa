@@ -1,0 +1,190 @@
+*{
+    margin:0;  /*saca todos los puntos y espacios*/         
+	padding: 0;
+	/*Esto no se para que sirve
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: border-box;*/
+  } 
+    body{
+	    background: #313D52;  /*Pone un color de fondo*/
+	 }
+   header{
+	  width: 100%; 
+   }
+
+ .menu_bar{ 
+ 	display: none; /*Para quitar que no se vean las tres rayitas*/
+ }  
+   
+   .navegacion{  /*Color de fondo del menu y tamaño en este caso es blanco*/
+	   width: 1000px;
+	   margin: 30px auto;
+	   background: #024959;
+   }
+   .navegacion ul{
+	   list-style: none;  /*saca los puntitos al lado del menu*/
+   }
+   .menu1 > li{  /*pone el menu principal de vertical a horizontal*/
+	     position: relative;
+		 display: inline-block;
+   }
+   .menu1 > li > a{   /*separa y cambia de color las letras*/
+	   display: block;
+	   padding: 15px 20px;
+	   color: #fff;
+	   font-family: 'Open sans';
+	   text-decoration:none;
+   }
+   .menu1 li a:hover{
+	color: #CE7D35;
+	transition: all .3s; /*Da color y manito, cada vez que pasa el mouse sobre el menu*/
+    }
+	
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;  /*Oculta el submenú hidden*/
+	/*opacity: 0;
+	transition: opacity 3.5s;*/
+	z-index: 1;   /*para que este adelante de la página*/
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px; /* Distancia entre los submenues*/
+	color: rgb(235, 234, 243); /*Color blanco del submenues*/
+	/*font-family: 'Open sans';
+	text-decoration: none;*/
+	
+}
+/*/////////////////////////////////////////////////////*/
+/* Segundo nivel de submenu */
+.submenu .submenu{
+	position: absolute;
+	left: 100%;
+	top: 0;
+	visibility: hidden;
+	background: #444;
+	width: 180px;
+	z-index: 1000;
+}
+/* Mostrar el submenu de segundo nivel */
+
+.submenu li:hover > .submenu{
+	visibility: visible;
+}
+
+/*////////////////////////////////////////////////////////*/
+
+.menu1 li:hover > .submenu {
+	visibility: visible;
+	opacity: 1;
+}
+/*AGREGADO POR CHAT GPT*/
+  /* Primer submenu */
+.menu1 li{
+	position: relative;
+}
+
+.submenu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #333;
+	min-width: 220px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s;
+	z-index: 1000;
+}
+
+/* Mostrar primer submenu */
+.menu1 li:hover > .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Segundo nivel */
+.submenu li{
+	position: relative;
+}
+
+.submenu .submenu{
+	top: 0;
+	left: 100%;
+	background: #444;
+	min-width: 180px;
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* Mostrar segundo submenu */
+.submenu li:hover > .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.submenu li:has(.submenu) > a::after{
+	content: " ►";
+	float: right;
+}
+/*FINAL AGREGADO POR CHAT GPT*/
+/*
+.menu1 li:hover {
+	visibility: visible;
+	opacity: 1;
+}*/
+   
+/*@media(max-width: 800px){ /*Para hacer responsive como yo ya sabia*/
+
+@media only screen and (max-width: 800px) {
+
+     .navegacion {  /*Es la barra del menú*/
+		background: #024959;
+ 	    width: 80%; /*ancho_para que se pueda ver un poco la otra parte*/
+ 	    height: 100%; /*altura*/
+ 	    left:-100%; /*Desaparece el menú para que vuelva con un clic de javascript*/
+ 	    margin: 0px;
+ 	    position: fixed; /*Se mantiene en ese lugar por mas que se haga Scroll*/
+ 	    z-index: 2;   /*para que este adelante de la página*/
+         }
+    
+.menu1 > li { /*Formato general al menú*/
+       	 display: block; /*Abarca todo lo que pueda de ancho*/
+         float: none; /* que NO este en Horizontal */
+         border-bottom:1px rgba( 255, 255, 255, .3); /* .3 es la opacidad */
+         
+                        }
+
+.menu_bar{ /* las tres rayitas */
+        	display: block; /*Para esten visibles las tres rayitas*/
+        	width: 80%;
+        	background: #ccc; /*gris claro*/
+        	
+            }
+.menu_bar .bt-menu{ /*Accede a la otra clase del menu de los 3 puntitos*/
+             display: block; /*Para que abarque un 100%*/
+             padding: 20px; /*Deja un margen */
+             background: #024959; /*para poner el mismo color que la barra*/
+             color: #fff; /*color blanco para el texto*/
+             text-decoration: none;
+             font-weight: bold; /*Fuente bold*/
+             font-size: 25px; /*Tamaño fuente*/
+             -webkit-box-sizing:border-box; /*Adaptable a otro navegador*/
+             -moz-box-sizing:border-box;  /*Adaptable a otro navegador*/
+             box-sizing: border-box; /*Adaptable a otro navegador*/
+             
+           }
+		   .submenu{
+			width: 100%;
+			z-index: 2;   /*para que este adelante de la página*/
+		   }
+
+
+ 	   }
+
+ 

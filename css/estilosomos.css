@@ -1,0 +1,136 @@
+body {
+   background:#e6e6e6;
+}
+
+div{
+  padding:20px;
+  background:#fff;
+  margin-bottom:20px;
+  
+}
+/* Menu  */
+/* Fin Menu */
+
+h1 {
+position:absolute; 
+top:0; 
+text-align:center;
+left:370;
+color: #560000;
+}
+.logo1{  /*chica sentada*/
+height: 150px;   /* altura */
+/*width: 400px;     anchura */	
+}
+.imagen {  /* Oso */
+height: 120px;   /* altura */
+/*width: 400px;     anchura */	
+position:absolute; 
+top:40; 
+left:1150;
+}
+
+.logouniv {
+height: 52px;   /* altura */
+/*width: 400px;     anchura */		
+position:absolute; /* tengo que poner absolute para mover libremente*/
+top:260;       /*se mueve verticalmente*/
+left:1120;    /*se mueve horizontalmente*/
+}
+.logofulbrigt {
+height: 70px;   /* altura */
+/*width: 400px;     anchura */
+position:absolute; /* logofulbrigt tengo que poner absolute para mover libremente*/
+top:90;       /*se mueve verticalmente*/
+left:500;    /*se mueve horizontalmente*/
+}
+aside {   /* PUBLICIDAD  */
+ 
+position:absolute;  /* tengo que poner absolute para mover de un lado a otro */
+top: 315px;
+left: 1120px;  /*se mueve horizontalmente*/
+height: 350px;   /* altura */
+width: 200px;  /* anchura */
+
+background:#ff8000;
+
+
+}
+
+footer {             /* derecho de autor (pie de pagina) */
+  background:#0000FF;
+  color:#FFFFFF;
+  padding:1% 31%;  /* el primero el alto, tamaño del cuadro que lo bordea */
+  text-align:center;
+  position: absolute;
+  top: 125%;  /*se mueve verticalmente*/
+  left: 25px;  /*se mueve horizontalmente*/
+}
+.video1{
+height: 200px;   /* altura */
+ /*width: 400px;    anchura */
+ position: absolute;
+  top: 0px;  /*se mueve verticalmente*/
+  left: 0px;  /*se mueve horizontalmente*/
+}
+.moverdesvid{
+/*height: 200px;    altura */
+width: 400px;    /*anchura */	
+position: absolute;
+  top: 200px;  /*se mueve verticalmente*/
+  left: 0px;  /*se mueve horizontalmente*/
+}
+.yellow{
+	color:blue;
+	/*background:#FFBF00;*/
+}
+
+ figure{
+position:absolute;
+top:400px;
+left: 325px;
+ }
+/*****************************************************************************************  COMANDOS RESPONSIVES *****************************************************************/
+@media handheld, screen and (min-width: 300px) and (max-width: 1023px){  /*Código Responsive - handheld=dispositivos de mano....screen=compu.de escritorio*/
+
+
+h1 {
+font-size:17;	
+position:absolute;
+top:15px;
+left: 100px;
+}
+.logofulbrigt {
+height: 50px;   /* altura */
+/*width: 400px;     anchura */
+position:absolute; /* logofulbrigt tengo que poner absolute para mover libremente*/
+top:62;       /*se mueve verticalmente*/
+left:150;    /*se mueve horizontalmente*/
+}
+.logo1{  /*chica sentada*/
+height: 50px;   /* altura */
+/*width: 400px;     anchura */	
+}
+.imagen {  /* Oso */
+height: 70px;   /* altura */
+/*width: 400px;     anchura */	
+position:absolute; 
+top:20; 
+left:350;
+}
+
+aside {   /* PUBLICIDAD  */
+display: none;   /*Un elemento DESAPARECE completamente de la página*/
+}
+
+ figure{
+position:absolute;
+top:340px;
+left:20px;
+ }
+.logouniv {
+display: none;   /*Un elemento DESAPARECE completamente de la página*/
+     }
+}
+
+

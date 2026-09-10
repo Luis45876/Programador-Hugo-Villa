@@ -1,0 +1,195 @@
+
+
+body{
+/*----------------------------------------------------------------------------------------------------------------------*/
+font-family: Arial;
+            margin: 40px;
+        }
+
+        input{
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #resultado{
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 400px;
+            min-height: 50px;
+/*-----------------------------------------------------------------------------------------------------------------------*/
+      background: #F6E3CE;  /*color de fondo*/	
+}
+
+/*h1 {
+	margin:0 0 0 80px;
+	font-size:36px; 
+	color:#0000FF;
+}*/
+
+.menu_bar{ 
+ 	display: none; /*Para quitar que no se vean las tres rayitas*/
+ } 
+
+#contenedor{
+  width: 960 px; /*Ancho del contenedor*/
+  height: auto;  /*auto: no se los valores, depende de los elementos que esten dentro del contenedor*/  
+  background: #FE2E2E;  /*color de fondo*/
+  margin-left: auto; /*queda en el centro de la pantalla*/
+  margin-right: auto; /*queda en el centro de la pantalla*/
+  margin-top: 30px;
+}
+
+header{
+  width: 960 px; /*El ancho: el mismo del contenedor o un poco menos puede ser*/	
+  height:150 px; /*Alto*/
+  background: #F5DA81;  /*color de fondo*/	
+  margin-bottom: 20px;
+}
+#contenido{
+width: 960px;
+height:auto;
+	
+}
+footer{
+width:960px;
+height:auto;
+background:#0000FF;
+float:right;  /*para que flote hacia la izquierda*/	
+clear:right; /*que ocupe el lugar mas próximo al flotar a la izquirda*/
+padding-left:13px;
+}
+#marca{
+  width: 50%; /* Ancho */
+  height: 1%; /* Altura */
+  padding:0%;  /* Relleno */
+}
+
+nav#botonera{
+ width:960px;
+height:40px;
+text-align: right;
+margin-top: 10px; 
+}
+nav#botonera ul{
+  margin: 0;
+  padding: 0;
+  list-style-type:none;
+}
+nav#botonera li{
+	display:inline-block;
+}
+nav#botonera li a{
+ display:inline-block;
+ padding-left: 10px;
+ color: #000;
+ font: italic bold 1.2em Century Gothic, sans-serif;
+ text-decoration: none; 
+}	
+
+nav#botonera li a:hover{
+	color: #ff6600;
+}
+#mostrar_cuadros{
+position: relative;
+top: 20px;
+left: 10px;
+/*left: 100px;  se mueve horizontalmente*/
+/*top:0%;  mueve verticalmente*/
+}
+
+/*Estilo Boton*/
+.mi-boton {
+  background-color: #ff6600;;
+  color: white;
+  padding: 10px 100px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.mi-boton:hover {
+  .mi-boton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.mi-boton:hover {
+  background-color: #0056b3;
+} #0056b3;
+}
+
+/*@media(max-width: 800px){ /*Para hacer responsive como yo ya sabia*/
+
+@media only screen and (max-width: 800px) {
+	
+	
+
+
+     nav#botonera{  /*Es la barra del menú*/
+		background: #024959;
+ 	    width: 50%; /*ancho de LAS LETRAS DEL MENU*/
+ 	    height: 50%; /*altura*/
+ 	    left:-100%; /*Desaparece el menú para que vuelva con un clic de javascript*/
+ 	    margin: 0px;
+ 	    position: fixed; /*Se mantiene en ese lugar por mas que se haga Scroll*/
+ 	    z-index: 2;   /*para que este adelante de la página*/
+		 
+		text-align: left; /*PONE TODO EL MENU AL MARGEN IZQUIERDO*/
+		margin-top:25px; 
+         }
+		 
+nav#botonera li a{
+ display: flex;
+ padding-left: 14px;
+ color: #DBBDB6; /*EL COLOR DE LAS LETRAS DEL MENU VERTICAL*/
+ font: italic bold 1.2em Century Gothic, sans-serif;
+ text-decoration: none; 
+ margin-bottom: 15px; /* Espacio de 15px debajo de cada opción MAS ESPACIOS ENTRE OPCINES DEL MENU*/
+}
+
+		 
+.menu1 > li { /*Formato general al menú*/
+       	 display: block; /*Abarca todo lo que pueda de ancho*/
+         float: none; /* que NO este en Horizontal */
+         border-bottom:1px rgba( 255, 255, 255, .3); /* .3 es la opacidad */
+		    }
+			
+#mostrar_cuadros{
+position: relative;
+top: 20px;
+left: 10px;
+/*left: 100px;  se mueve horizontalmente*/
+/*top:0%;  mueve verticalmente*/
+}			
+			
+.menu_bar{ /* las tres rayitas */
+        	display: block; /*Para esten visibles las tres rayitas*/
+        	width: 80%;
+        	background: #ccc; /*gris claro*/
+        	
+            }
+.menu_bar .bt-menu{ /*Accede a la otra clase del menu de los 3 puntitos*/
+             display: block; /*Para que abarque un 100%*/
+             padding: 10px; /*Deja un margen */
+             background: #024959; /*para poner el mismo color que la barra*/
+             color: #fff; /*color blanco para el texto*/
+             text-decoration: none;
+             font-weight: bold; /*Fuente bold*/
+             font-size: 25px; /*Tamaño fuente*/
+             -webkit-box-sizing:border-box; /*Adaptable a otro navegador*/
+             -moz-box-sizing:border-box;  /*Adaptable a otro navegador*/
+             box-sizing: border-box; /*Adaptable a otro navegador*/
+             
+           }		 
+		 
+  
+				 
+
+
+ 	   }

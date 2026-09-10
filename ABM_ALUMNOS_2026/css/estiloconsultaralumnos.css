@@ -1,0 +1,73 @@
+.botones-resultados {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.boton-imprimir,
+.boton-copiar {
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    margin-right: 10px;
+}
+
+
+.boton-imprimir {
+    background-color: #024959;
+    color: white;
+}
+
+
+.boton-copiar {
+    background-color: #2e8b57;
+    color: white;
+}
+
+
+.boton-imprimir:hover {
+    background-color: #037a8c;
+}
+
+
+.boton-copiar:hover {
+    background-color: #246b45;
+}
+
+
+#mensajeCopiado {
+    margin-top: 10px;
+}
+
+
+.boton-tabla {
+
+    background-color: #6c5ce7;
+    color: white;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    margin-right: 10px;
+}
+
+
+.boton-tabla:hover {
+
+    background-color: #5145b5;
+
+}
+

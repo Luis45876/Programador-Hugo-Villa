@@ -1,0 +1,42 @@
+﻿body {
+background-color: #E2ECEE;
+}
+
+.contacto{   /*class - (todos los forms)*/ 
+  border: 1px solid #CED5D7;
+  border-radius: 6px;
+  padding: 45px 45px 20px;
+  margin-top: 5px;
+  background-color: white;
+  box-shadow: 0 px 5px 10px #B5C1C5, 0 0 0 10px #EEE5F7 inset;
+}
+
+.contacto label{        /* cambia los textos antes de los imput*/
+   /*display: inline;   Esto es para que label se sobreponga a la caja de texto  none=los oculta,   */
+   font-weight: bold;  
+}   
+
+.contacto div{
+   margin-bottom: 15px; /* Esto los separa un poco  */
+}
+.forma{
+   position: relative;
+   left: 460px;  /*se mueve horizontalmente*/
+   /*top:23px;  mueve verticalmente*/
+   font-size:23pt;
+   font-weight: bold;
+}
+.tipo{
+  position: absolute;
+  left: 475px;  /*se mueve horizontalmente*/
+  top:20px;  /*mueve verticalmente*/   
+}
+.autor{
+   position: relative;
+   left: 460px;  /*se mueve horizontalmente*/
+   /* top:2px;    mueve verticalmente*/
+   font-size:12pt;
+   font-weight: bold;
+}
+
+

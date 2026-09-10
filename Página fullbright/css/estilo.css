@@ -1,0 +1,449 @@
+body {
+   background:#e6e6e6;
+}
+
+/*************************** ANIMACIONES ********************************************************/
+p,h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} 
+/*********************************FIN ANIMACIONES **********************************************/
+
+.principal{                              /* Primer Logotipo*/
+height: 120px;   /* altura */
+width: 120px;  /* anchura */ 
+ padding:10px;
+ margin-bottom:1px;
+}
+/* Menu  */
+* {
+	margin: 0px;
+	padding: 0px; 
+	outline: 0;
+}
+
+#menu {
+	text-align: center;
+
+	/*font-family: Arial, Verdana, Tahoma;*/
+	font-family: 'Pacifico', cursive;  /*se copia el codigo de google fond*/
+	width: 100%;
+	height: 70px;   /* altura */
+	margin: 20px auto;
+	/*background-color:; #999   Todo esto le da el color de fono(naranja)*/
+	background: -webkit-linear-gradient(#006,#FF6600);/*para pintar en degrado EN LINEAL*/
+
+}
+
+#menu ul {
+	list-style-type: none;
+}
+
+#menu ul li {
+	width: 172px;  /*Ancho del botón*/
+}
+
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	margin: 20px auto; /*para centrar los títulos (sacar esto si dejo solo la botonera azul de abajo*/
+	/*background-color: rgba(59,93,148,1);  (le da el color azul a los botones, que en este caso lo quité) transparente*/
+	/*border: solid 1px #fff;  (Le da el color blanco del margen de los botones, que en este caso también lo saque) transparente*/
+	padding: 5px;
+	position: relative;
+	z-index:1; /* codigo para que la imagen se ubique al fondo similar a atras de la página, si es 1 va adelante los negativos van atras*/
+}
+
+#menu ul li ul li a {
+	width: 175px;
+	padding: 8px 0px;
+	background-color: rgba(59,93,148,1);
+	margin: 5px auto;
+	
+}
+/*PARA OCULTAR LOS SUBMENUES*/
+#menu ul li ul {
+	display: none;
+}
+
+#menu ul li ul li ul li a.primera {
+	border-top-color: #000;
+}
+
+#menu ul li.nivel1 { 
+	float: left;
+	margin-right: 1px;
+}
+
+#menu ul li a.nivel2 {
+	color: #fff;
+	
+}
+
+#menu ul li a.nivel1, #menu ul li a.nivel2 {
+	display: block;
+	position: relative;
+	
+}
+/*FIN PARA OCULTAR LOS SUBMENUES*/
+
+/*Ahora viene propiedad HOVER para que al pasar el mouse se muestren los submenues*/
+#menu ul li:hover {
+	position: relative;
+}
+
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {
+	background-color: #000;
+	color: #fff;
+	position: relative;
+}
+
+#menu ul li:hover  ul.nivel2, #menu ul li a:hover  ul.nivel2{
+	display: block;
+	position: absolute;left: 0px;
+}
+
+#menu ul li ul li a:hover ul.nivel3, #menu ul li ul li:hover ul.nivel3 {
+	display: block;
+	position: absolute;
+	left: 161px;
+	top:0px;
+}
+
+#menu ul li ul li a:hover {
+	border-top-color: #000;
+	position: relative;
+}
+/*FIN - FIN - POR FIN - viene propiedad HOVER para que al pasar el mouse se muestren los submenues*/
+/* Fin Menu */
+
+h1 {
+position:absolute; 
+top:70; 
+left:150;
+text-shadow:5px 10px 7px rgba(0,0,0,0.5); /* sombra estilso css3*/
+font-family: 'Pacifico', cursive;
+font-family: 'Kaushan Script', cursive; /*Google form*/
+}
+h2 {
+position:absolute; 
+top:20; 
+left:150;
+color:white;
+text-shadow:
+1px 1px 0px rgba(230,230,230,1),
+2px 2px 0px rgba(200,200,200,1),
+3px 3px 0px rgba(180,180,180,1),
+4px 4px 0px rgba(160,160,160,1);
+}
+
+.imagen {              /*Oso*/
+height: 120px;   /* altura */
+/*width: 140px;   anchura */ 
+position:absolute; 
+top:20; 
+left:1150;
+}
+
+.logouniv {
+height: 52px;   /* altura */
+/*width: 120px;   anchura */ 	
+position:absolute; /* tengo que poner absolute para mover libremente*/
+top:260;       /*se mueve verticalmente*/
+left:1120;    /*se mueve horizontalmente*/
+}
+
+aside {   /* PUBLICIDAD  */
+ 
+position:absolute;  /* tengo que poner absolute para mover de un lado a otro */
+top: 315px;
+left: 1120px;  /*se mueve horizontalmente*/
+height: 350px;   /* altura */
+width: 200px;  /* anchura */
+background:#ff8000;
+}
+
+footer {             /* derecho de autor (pie de pagina) */
+  background:#0000FF;
+  color:#FFFFFF;
+  padding:1% 31%;  /* el primero el alto, tamaño del cuadro que lo bordea */
+  text-align:center;
+  position: absolute;
+  top: 150%;  /*se mueve verticalmente*/
+  left: 25px;  /*se mueve horizontalmente*/
+}
+.yellow{
+	color:blue;
+	/*background:#FFBF00;*/
+}
+.imagen1{
+height: 224px;   /* altura */
+width: 400px;    /* anchura */
+/*background-color: red;*/
+position:absolute;
+z-index:0;  /* codigo para que la imagen se ubique al fondo similar a atras de la página*/
+top:400px;
+left: 30px;
+border: 2px green solid;
+border-radius:15px;	/*Redondea las esquinas*/
+}
+
+.imagen2{
+height: 224px;   /* altura */
+width: 400px;    /* anchura */
+/*background-color: red;*/
+position:absolute;
+top:400px;
+left: 645px;
+border: 2px green solid;
+border-radius:15px;	/*Redondea las esquinas*/
+}
+.imagen3{
+height: 224px;   /* altura */
+width: 400px;    /* anchura */
+/*background-color: red;*/
+position:absolute;
+top:640px;
+left: 70px;
+border: 2px green solid;
+border-radius:15px;	/*Redondea las esquinas*/
+}
+.imagen4{
+height: 224px;   /* altura */
+width: 400px;    /* anchura */
+/*background-color: red;*/
+position:absolute;
+top:640px;
+left: 630px;
+border: 2px green solid;
+border-radius:15px;	/*Redondea las esquinas*/
+}
+.fondo{
+height: 224px;   /* altura */
+width: 800px;    /* anchura */
+/*background-color: red;*/
+position:relative;
+top:50px;
+left: 10px;
+border: 2px green solid;
+} 
+/*********************************************************************** ANIMACIÓN  *************************************************************************************/
+div {    animation-name: 'movimiento-diagonal';    
+animation-duration: 5s;    
+animation-iteration-count: 10; 
+}
+@keyframes 'movimiento-diagonal' {    
+from {       
+left: 0;       
+top: 0;    
+}        
+to{       
+left: 100px;       
+top: 100px;    
+} 
+}  
+
+/*****************************************************************************************  COMANDOS RESPONSIVES *****************************************************************/
+@media handheld, screen and (min-width: 300px) and (max-width: 1023px){  /*Código Responsive - handheld=dispositivos de mano....screen=compu.de escritorio*/
+
+#menu {
+	height: auto;   /* altura */
+}
+
+
+#menu ul li {
+	width: auto;  /*codigo responsible*/
+}
+
+#menu ul li a {
+	display: block;
+	margin: 1px auto; /*menor distancia entre boton y boton*/
+}
+
+
+/*PARA OCULTAR LOS SUBMENUES*/
+
+#menu ul li.nivel1 { 
+   float:none;  /* Responsive para que no flote a la izquierda */
+   margin-right: 1px;
+}
+
+
+h1 {
+font-size:12;	
+top:auto; 
+left:auto;
+}
+h2 {
+font-size:12;
+}
+.principal{                              /* Primer Logotipo*/
+height: 60px;   /* altura */
+width: 60px;  /* anchura */ 
+ padding:0px;
+ margin-bottom:0px;
+}
+
+.imagen {              /*Oso*/
+height: 50px;   /* altura */
+/*width: 140px;   anchura */ 
+position:absolute; 
+top:5; 
+left:350; 
+}
+
+
+.logouniv {
+  display: none;   /*Un elemento DESAPARECE completamente de la página*/
+
+}
+
+aside {   /* PUBLICIDAD  */
+display: none;   /*Un elemento DESAPARECE completamente de la página*/
+}
+
+footer {             /* derecho de autor (pie de pagina) */
+  display: none;   /*Un elemento DESAPARECE completamente de la página*/
+}
+.yellow{
+	color:blue;
+	/*background:#FFBF00;*/
+}
+.imagen1{
+height: 150px;   /* altura */
+/*width: 224px;     anchura */
+/*background-color: red;*/
+position: static;
+border: 1px green solid;
+
+}
+
+.imagen2{
+height: 200px;   /* altura */
+/*width: 90px;     anchura */
+/*background-color: red;*/
+position: static;
+border: 2px green solid;
+}
+.imagen3{
+height: 224px;   /* altura */
+/*width: 400px;     anchura */
+/*background-color: red;*/
+position: static;
+border: 2px green solid;
+}
+.imagen4{
+height: 224px;   /* altura */
+width: 400px;    /* anchura */
+/*background-color: red;*/
+position: static;
+border: 2px green solid;
+}
+	
+@media handheld, screen and (max-width: 599px){  /*------------------Código Responsive NO se pone minimo por la diversidad de tablet y celulares que hay en el mercado------------------------------------------*/
+#menu {
+	height: auto;   /* altura */
+}
+
+
+#menu ul li {
+	width: auto;  /*codigo responsible*/
+}
+
+#menu ul li a {
+	display: block;
+	margin: 1px auto; /*menor distancia entre boton y boton*/
+}
+
+
+/*PARA OCULTAR LOS SUBMENUES*/
+
+#menu ul li.nivel1 { 
+   float:none;  /* Responsive para que no flote a la izquierda */
+   margin-right: 1px;
+}
+
+
+h1 {
+font-size:12;	
+top:auto; 
+left:auto;
+}
+h2 {
+font-size:12;
+}
+.principal{                              /* Primer Logotipo*/
+height: 60px;   /* altura */
+width: 60px;  /* anchura */ 
+ padding:0px;
+ margin-bottom:0px;
+}
+
+.imagen {              /*Oso*/
+height: 50px;   /* altura */
+/*width: 140px;   anchura */ 
+position:absolute; 
+top:5; 
+left:350; 
+}
+
+
+.logouniv {
+  display: none;   /*Un elemento DESAPARECE completamente de la página*/
+
+}
+
+aside {   /* PUBLICIDAD  */
+display: none;   /*Un elemento DESAPARECE completamente de la página*/
+}
+
+footer {             /* derecho de autor (pie de pagina) */
+  display: none;   /*Un elemento DESAPARECE completamente de la página*/
+}
+.yellow{
+	color:blue;
+	/*background:#FFBF00;*/
+}
+.imagen1{
+height: 150px;   /* altura */
+/*width: 224px;     anchura */
+/*background-color: red;*/
+position: static;
+border: 1px green solid;
+}
+
+.imagen2{
+height: 200px;   /* altura */
+/*width: 90px;     anchura */
+/*background-color: red;*/
+position: static;
+border: 2px green solid;
+}
+.imagen3{
+height: 224px;   /* altura */
+/*width: 400px;     anchura */
+/*background-color: red;*/
+position: static;
+border: 2px green solid;
+}
+.imagen4{
+height: 224px;   /* altura */
+width: 400px;    /* anchura */
+/*background-color: red;*/
+position: static;
+border: 2px green solid;
+}	
+}

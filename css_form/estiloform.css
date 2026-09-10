@@ -1,0 +1,24 @@
+.rojo{
+height: 400px;   /* altura */
+width: 70%;    /* anchura */
+background-color: #FFBF00;
+border: 2px green solid;
+margin: 20px;
+}
+
+/*Para los get del formulario*/
+input, textarea {
+	width: 50%; /*largo del get*/
+	margin-bottom:5px; /*Espacio entre botón y botón*/
+	padding: 5px;  /*alto del Get*/
+    background-color: #e1ffc1;
+    color: 1px solid #3e700a;
+	/*margin: 20px;  /*Es el margen exterio - de los cuatro*/
+	margin-left: 20px;  /*Solo el margen Izquierdo*/
+}
+
+.boton_envio{
+  width:20%;
+  float:left;  /*boton envio a la izquierda*/
+  background-color: #F5DA81;
+}

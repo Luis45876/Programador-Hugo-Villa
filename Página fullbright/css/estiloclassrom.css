@@ -1,0 +1,63 @@
+body {
+   background:#e6e6e6;
+}
+
+h1 {
+text-align:center;
+font-size:36px; 
+	color:#6A0888;
+}
+
+.imagen {
+position:static; 
+height: 224px;   /* altura */
+width: 400px;    /* anchura */
+top:40; 
+left:1150;
+}
+.imag2 {
+position:static; 
+height: 224px;   /* altura */
+width: 400px;    /* anchura */
+
+}
+
+.profesora{
+position:static;	
+
+border: 2px green solid;
+height: 224px;   /* altura */
+width: 400px;    /* anchura */
+
+}
+/*CUADRO PARA TRADUCCIÓN DE DOCTORA*/
+
+/*FIN DE CUADRO PAR TRADUCCIÓN DE DOCTORA*/
+.formato {
+	font-family: Century Gothic, sans-serif;
+	font-size: 14px;
+	/*color: #FFFFFF;*/
+	font-weight: bold; 
+}
+figure{
+position:relative;  /* solo se desplaza a la izquierda o derecha*/
+left:400;	
+}
+figcaption {
+font-family: Century Gothic, sans-serif;
+font-size: 12px;	
+}
+footer {             /* derecho de autor (pie de pagina) */
+
+  background:#0000FF;
+  color:#FFFFFF;
+  
+  }
+
+audio{
+position:relative;  /* solo se desplaza a la izquierda o derecha*/
+/*top:40; */
+left:600;
+}
+
+

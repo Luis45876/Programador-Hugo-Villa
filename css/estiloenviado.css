@@ -1,0 +1,33 @@
+﻿
+body {
+	background-color: #FF9900;
+	font-family: "Trebuchet MS", "Segoe UI", Tahoma;
+}
+#contenedor {
+	height: 600px;
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	border: 1px solid #666666;
+}
+
+h1 {
+	font-size: 20px;
+	text-align: center;
+	color: #000066;
+	background-color: #CCCCCC;
+	padding:10px;
+}
+h2 {
+	font-size: 20px;
+	text-align: center;
+	color: #0000FF;
+	background-color: #DEB887;
+	padding:10px;
+}
+img{
+position: relative;
+left: 400px;  /*se mueve horizontalmente*/
+	
+}

@@ -1,0 +1,174 @@
+.lapices{    /*arma la cajita*/
+height: 50%;   /* altura */
+/*width: 100px;    /* anchura */
+position: absolute;
+  left: 20%;  /*se mueve horizontalmente*/
+  top:20%;
+}
+
+.imagen_logo{    /*arma la cajita*/
+  height: 20%;   /* altura */
+ /* width: 100px;     anchura */
+  position: absolute;
+  left: 20%;  /*se mueve horizontalmente*/
+  top:20%;  /*mueve verticalmente*/
+  z-index: 1;   /*para que este adelante de la página*/
+}
+.imagen_forma{                  /*la imagen de los formularios*/
+  width: 30%; /*anchura*/
+   border: 5px solid; 
+}
+.imagen_forma2{                  /*la imagen de los formularios*/
+  position: absolute;
+  left: 480px;
+  top: 67px;
+  height: 32.5%; /*altura*/
+   border: 5px solid; 
+}
+
+.impresora2{
+  position: absolute;
+  left: 535px; /*se mueve horizontalmente*/
+  top: 300px;
+  width: 15%;
+  /*border: 3px solid;*/
+ }
+
+h2{
+  text-align: left;
+}
+/* Fin para formas.php */
+
+/* table{
+
+  border: 5px solid;
+  width: 70%; /*ancho*/
+  /*height: 80%; altura*/
+/*}
+td{
+  border: 5px solid; 
+}*/
+
+
+.movtitulo{
+ position:relative;
+ left:300px;  /*se mueve horizontalmente*/
+ top:10px;	
+ z-index: 1;  /* para que este adelante de la p�gina*/
+}
+
+
+ p{
+  color: white;
+  font-size: 15px;
+} 
+
+h1{
+color: white;	
+}
+h3{
+   color: rgb(89, 78, 233);
+ }
+.selecol{
+height: 100px;   /* altura */
+width: 100px;    /* anchura */
+background-color: red;
+border: 2px green solid;
+}
+#movselecol{
+ position:relative;
+ left:600px;  /*se mueve horizontalmente*/
+ top:280px;
+  
+}
+footer{
+ position:absolute;
+ left:10%;  /*se mueve horizontalmente*/
+ top:80%;
+ color: white;
+}	
+
+aside {   /* PUBLICIDAD  */
+position:absolute;  /* tengo que poner absolute para mover de un lado a otro */
+top: 315px;
+left: 1120px;  /*se mueve horizontalmente*/
+height: 350px;   /* altura */
+width: 200px;  /* anchura */
+background:#ff8000;
+/*Sacado de la p�gina sugerida de dise�o color*/
+  background:-webkit-gradient(linear, 80% 20%, 27% 24%, from(#A84379), to(#DB7C46));
+  /*Sacado de la p�gina sugerida de dise�o color*/
+  /*Sombra tambien sacado de la pagina de sugerencia, menu Box Shadow*/
+  -moz-box-shadow: -16px -13px 9px #000000;
+  -webkit-box-shadow: -16px -13px 9px #000000;
+   box-shadow: -16px -13px 9px #000000;
+  /*Sombra tambien sacado de la pagina de sugerencia, menu Box Shadow*/  
+}
+
+@media(max-width: 800px){ /*Para hacer responsive como yo ya sabia*/
+
+  .imagen_forma{                  /*la imagen de los formularios*/
+  width: 70%; /*anchura*/
+   border: 5px solid; 
+}
+
+
+.imagen_forma2{                  /*la imagen de los formularios*/
+  position: absolute;
+  left: 10px;
+  top: 90%;
+  height: 32.5%; /*altura*/
+   border: 5px solid; 
+}
+
+.impresora2{
+  display: block;
+  left: 15px; /*se mueve horizontalmente*/
+  top: 125%;
+  width: 15%;
+  /*border: 3px solid;*/
+ }
+.movtitulo{
+ position:relative;
+ left:20px;  /*se mueve horizontalmente*/
+ top:10px;  
+ }
+
+.lapices{    /*arma la cajita*/
+height: 30%;   /* altura */
+/*width: 100px;    /* anchura */
+position: absolute;
+  left: 10%;  /*se mueve horizontalmente*/
+  top:30%;
+  z-index: auto;
+}
+.imagen_logo{    /*arma la cajita*/
+  height: 10%;   /* altura */
+ /* width: 100px;     anchura */
+  position: absolute;
+  left: 60%;  /*se mueve horizontalmente*/
+  top:59%;  /*mueve verticalmente*/
+  z-index: 1;
+  }
+aside {   /* PUBLICIDAD  */
+position:absolute;  /* tengo que poner absolute para mover de un lado a otro */
+top: 20%;
+left: 50%;  /*se mueve horizontalmente*/
+height: 50%;   /* altura */
+width: 25%;  /* anchura */
+font-size: 14px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+}
+
+@media(max-width: 380px){ /*Para mi celular*/
+
+
+  aside {   /* PUBLICIDAD  */
+          display: none; /*Para que no se vea el aside*/
+        }
+}
